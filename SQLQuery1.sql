@@ -16,11 +16,12 @@ create table employee
 
    
  --view perticular data
-   
+   select * from employee 
    where Name='Sayli'
 
    --Update perticular data
-   set Address  'Mumbai'
+   update employee
+   set Address=  'Mumbai'
    where ID = 6
 
   --delete data
@@ -37,8 +38,8 @@ create table employee
 	alter table employee
     drop column Gender
 
-	--update employee Gender
-	set Gender='F'
+	update employee
+	set Gender ='F'
 	where ID in(3,4,5,6)
 
 
